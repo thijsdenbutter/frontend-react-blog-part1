@@ -3,6 +3,8 @@ import PostTile from "../../components/post-tile/PostTile.jsx";
 import './Posts.css'
 
 function Posts() {
+
+
     return (
         <div className="posts-container">
             <h1>Bekijk alle {posts.length} op het platform</h1>

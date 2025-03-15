@@ -39,21 +39,6 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-.form-container button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: darkcyan;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
 .error {
     color: red;
-}
-
-.form-container button:hover {
-    background: #007a7a;
 }

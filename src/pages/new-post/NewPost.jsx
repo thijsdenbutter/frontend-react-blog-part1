@@ -1,9 +1,10 @@
 import {useForm} from 'react-hook-form';
 import {calcReadingTime} from "../../Helpers/calcReadingTime.js";
 import './NewPost.css';
+import {Button} from "../../components/button/Button.jsx";
 
 function NewPost() {
-    const {register, handleSubmit, formState: { errors }} = useForm();
+    const {register, handleSubmit, formState: {errors}} = useForm();
 
     function handleFormSubmit(data) {
         const newData = {
@@ -93,9 +94,10 @@ function NewPost() {
                 </textarea>
                 {errors.content && <p className="error">{errors.content.message}</p>}
             </div>
-            <button type="submit">
-                Post blog
-            </button>
+            <Button
+                type="submit"
+                caption="Post blog"
+            />
         </form>
     )
 }
