@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Home from './Pages/home/Home.jsx'
 import NewPost from './Pages/new-post/NewPost.jsx'
 import Posts from './Pages/posts/Posts.jsx'
@@ -20,7 +20,8 @@ function App() {
                     <Route path="*" element={<PageNotFound/>}/>
                 </Routes>
             </div>
-    </>
+        </>
     )
 }
+
 export default App
